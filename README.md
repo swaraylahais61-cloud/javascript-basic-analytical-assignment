@@ -1,8 +1,17 @@
 # JavaScript Basic Analytical Assignment
 
-This repository contains the active JavaScript assignment solutions, organized by case.
+A simple JavaScript practice project focused on basic analytical logic, calculations, and decision-making.
 
-## Repository structure
+## Overview
+
+This repository contains two active case solutions implemented in JavaScript:
+
+- Purchase total calculation for a shopping checkout scenario
+- Scholarship eligibility evaluation for student assistance criteria
+
+The project is organized to keep the active logic easy to read, maintain, and extend.
+
+## Project Structure
 
 ```text
 javascript-basic-analytical-assignment/
@@ -13,37 +22,63 @@ javascript-basic-analytical-assignment/
 ├── screenshots/
 │   ├── test-results.png1.png
 │   └── test-results.png2.png
-├── case1.js  # archived reference
-└── case2.js  # backward-compatible alias
-└── case3.js  # backward-compatible alias
+├── case1.js              # archived reference
+├── case2.js              # legacy file
+├── case3.js              # legacy file
+└── .gitignore
 ```
 
-## Active cases
+## Active Solutions
 
-### Purchase Total Calculator (`src/purchaseCalculator.js`)
-Calculates the purchase subtotal, discount, shipping cost, and final payment.
+### 1. Purchase Calculator
+File: `src/purchaseCalculator.js`
 
-**Features:**
-- Compute purchase subtotal from product price and quantity
-- Apply discount percentage
-- Calculate shipping cost (free if subtotal >= Rp 500,000)
-- Calculate final payment amount
+This script calculates:
+- subtotal
+- discount amount
+- discounted total
+- shipping cost
+- final payment
 
-### Scholarship Eligibility Checker (`src/scholarshipEligibility.js`)
-Determines student scholarship eligibility based on multiple criteria.
+Example logic:
+- Product price: Rp 150,000
+- Quantity: 3
+- Discount: 10%
+- Shipping is free when the discounted total is Rp 500,000 or more
 
-**Eligibility criteria:**
-- Average score >= 80 AND Attendance >= 90%
-- Family income <= Rp 5,000,000
-- Active organization member
+### 2. Scholarship Eligibility Checker
+File: `src/scholarshipEligibility.js`
 
-**Scholarship categories:**
-- **Category A**: Income <= Rp 3,000,000 + all basic requirements
-- **Category B**: Income <= Rp 5,000,000 + all basic requirements
-- **Not Eligible**: Does not meet requirements
+This script checks whether a student qualifies for scholarship support based on:
+- average score
+- attendance percentage
+- family income
+- organization membership
+
+It evaluates whether the student qualifies for:
+- Category A
+- Category B
+- Not Eligible
+
+## Screenshots
+
+The `screenshots/` folder contains sample output images from test runs and validation results for the assignment.
 
 ## Notes
 
-- Case 1 has been archived and removed from the active workflow.
-- The screenshots folder contains console output examples from the assignment tests.
-- Each solution includes example data demonstrating the calculation logic.
+- Case 1 was removed from the active workflow and archived for reference.
+- The repository keeps the core assignment logic separated into clear, readable JavaScript files.
+- The project is intended for learning and demonstration of basic JavaScript conditionals and calculations.
+
+## How to Run
+
+Open a terminal in the project root and run either script with Node.js:
+
+```bash
+node src/purchaseCalculator.js
+node src/scholarshipEligibility.js
+```
+
+## License
+
+This project is for educational purposes and is not intended for production use.
