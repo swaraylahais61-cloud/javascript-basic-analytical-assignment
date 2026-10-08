@@ -1,11 +1,26 @@
 # JavaScript Basic Analytical Assignment
 
-This repository contains my JavaScript Basic Analytical Assignment.
+This repository contains the active JavaScript assignment solutions, organized by case.
 
-## Cases
+## Repository structure
 
-### Case 1 - Student Final Score
-Calculates a student's final score using assignment, midterm, and final exam scores. It also determines the student's status and category.
+```text
+javascript-basic-analytical-assignment/
+├── README.md
+├── cases/
+│   ├── case-2-purchase-total.js
+│   └── case-3-scholarship-eligibility.js
+├── screenshots/
+│   ├── test-results.png1.png
+│   └── test-results.png2.png
+├── case1.js  # archived / no longer active
+├── case2.js  # backward-compatible alias
+├── case3.js  # backward-compatible alias
+└── notes/
+    └── assignment-summary.md
+```
+
+## Active cases
 
 ### Case 2 - Purchase Total
 Calculates the purchase subtotal, discount, shipping cost, and final payment.
@@ -13,11 +28,8 @@ Calculates the purchase subtotal, discount, shipping cost, and final payment.
 ### Case 3 - Student Eligibility
 Checks student eligibility based on average score, attendance, family income, and organization membership.
 
-The Case 3 program was tested with three different students as required by the assignment.
+## Notes
 
-## Files
-
-- `case1.js` - Case 1 solution
-- `case2.js` - Case 2 solution
-- `case3.js` - Case 3 solution
-- `screenshots/` - Console output screenshots
+- Case 1 has been removed from the active workflow and archived for reference.
+- The active implementations now live in the `cases/` folder for a cleaner project structure.
+- The screenshots folder contains the console output examples for the assignment.
